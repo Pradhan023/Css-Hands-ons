@@ -1,0 +1,41 @@
+.h
+{
+    color: rgb(229, 50, 44);
+    font-weight: bolder;
+}
+.head
+{
+    color: rgb(234, 58, 50);
+    font-style: italic;
+    font-weight: bolder;
+}
+.text
+{
+    color: rgb(133, 22, 31);
+    line-height: 40px;
+    font-weight: bolder;
+}
+.text1
+{
+    color: rgb(133, 22, 31);
+    letter-spacing: 5px;
+    font-weight: bolder;
+}
+.text2
+{
+    color:rgb(149, 90, 59);
+    font-weight: bolder;
+}
+.line
+{
+    text-decoration-line: none;
+}
+.online
+{
+    text-decoration-line: line-through;
+}
+.u
+{
+    font-style: italic;
+    text-decoration-line: underline;
+}

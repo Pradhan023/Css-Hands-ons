@@ -1,0 +1,307 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-image: url(./shara\ desert.jpg);
+}
+.nav-bar
+{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    top: 30px;
+    left: 7%;
+    width: 87%;
+}
+.logo
+{
+  width: 80px;
+  height: 60px;
+}
+.nav-menu
+{
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+    width: 40%;
+    right: 0;
+}
+a
+{
+    text-decoration: none;
+    margin-left: 15%;
+    color: white;
+}
+#menu
+{
+    height: 55px;
+    position: relative;
+    bottom: 30%;
+}
+.content-container
+{
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    grid-template-rows: auto;
+    justify-items: center;
+    gap: 30%;
+    margin-top: 3%;
+}
+.child1
+{
+    position: relative;
+    cursor: pointer;
+}
+h1
+{
+    position: absolute;
+    top: 30%;
+    color: white;
+    font-size: 100px;
+}
+p
+{
+    position: absolute;
+    top: 51%;
+    color: white;
+    width: 600px;
+    line-height: 28px;
+}
+.explore-btn
+{
+    position: absolute;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 160px;
+    background-color: white;
+    top: 450px;
+}
+#text
+{
+    margin-left: 45px;
+    font-weight: bold;
+}
+
+.child2
+{
+    display: grid;
+    grid-template-columns: 270px 270px;
+    grid-template-rows: 300px 300px;
+    gap: 40px 80px;
+}
+.card:hover 
+{
+    transform: translateY(-15px);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out; 
+    cursor: pointer;
+}
+.card
+{
+    background-image: url(./pic-1.png);
+    border-radius: 20px;
+    background-size: cover;
+}
+.card1:hover 
+{
+    transform: translateY(-15px);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out; 
+    cursor: pointer;
+}
+.card1
+{
+    background-image: url(./pic-2.png);
+    border-radius: 20px;
+    background-size: cover;
+}
+.card2:hover 
+{
+    transform: translateY(-15px);
+    transition-duration: 1s;
+    transition-timing-function: ease-out; 
+    cursor: pointer;
+}
+.card2
+{
+    background-image: url(./pic-3.png);
+    border-radius: 20px;
+    background-size: cover;
+}
+.card3:hover 
+{
+    transform: translateY(-15px);
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out; 
+    cursor: pointer;
+}
+.card3
+{
+    background-image: url(./pic-4.png);
+    background-size: cover;
+    border-radius: 20px;
+}
+.card-text
+{
+    padding: 20px 20px 0 20px;
+}
+h3
+{
+    color: white;
+    padding-bottom: 10px;
+}
+#txt
+{
+    line-height: 35px;
+    color: white;
+}
+
+@media screen and (orientation:portrait) and (max-width:360px)
+{
+    .nav-bar
+    {
+        flex-direction: column;
+        top: 10px;
+        left: 7%;
+        width: 70%;
+    }
+    .nav-menu
+    {
+        flex-direction: column;
+        padding: 0.5%;
+        text-align: right;
+        width: 30%;
+    }
+    a
+    {
+        padding: 1px;
+    }
+    #menu
+    {
+        height: 35px;
+        position: absolute;
+        bottom: 20px;
+        right: -65px; 
+    }
+    .logo
+    {
+        padding-top: 15px;
+        width: 55px;
+        height: 50px;
+    }
+    .content-container
+    {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(2,auto);
+    }
+    .child1
+    {
+        right:120px;  
+    }
+    h1
+    {
+        top: 60px;
+        left: -20px;
+        color: white;
+        font-size: 40px;
+    }
+    p
+    {
+        top: 110px;
+        left: -20px;
+        color: white;
+        width: 310px;
+        line-height: 28px;
+    }
+    .explore-btn
+    {
+        border: 1px solid white;
+        border-radius: 20px;
+        padding: 10px;
+        width: 160px;
+        background-color: white;
+        left: -30px;
+        top: 280px;
+    }
+
+    .child2
+    {
+        grid-template-columns: 270px;
+        grid-template-rows: 300px 300px 300px 300px;
+        gap: 70px;
+        margin-top: -40px;
+    }
+
+}
+/* tab view */
+@media screen and (orientation:landscape) and (max-width:856px)
+{
+    .logo
+    {
+        height: 55px;
+        width: 65px;
+    }
+    .nav-bar
+    {
+        width: 83%;
+    }
+    .nav-menu
+    {
+        height: 50px;
+        width: 45%;
+        left: 55%;
+    }
+    .content-container
+    {
+        grid-template-columns: auto;
+    }
+    .child1
+    {
+        right: 360px;
+        top:8px;
+    }
+    h1
+    {
+        color: white;
+        font-size: 45px;
+    }
+    p
+    {
+        top: 60px;
+        font-size: large;
+        width: 750px;
+        line-height: 32px;
+    }
+    .explore-btn
+    {
+        top: 180px;
+    }
+    .child2
+    {
+        grid-template-columns: 550px;
+        grid-template-rows: 320px 320px 320px 320px;
+        gap: 60px;
+        margin-top: -110px;
+    }
+    .card
+    {
+        background-size: 100% 100%;
+
+    }
+    .card1
+    {
+        background-size: 100% 100%;
+    }
+    .card2
+    {
+        background-size: 100% 100%;
+    }
+    .card3
+    {
+        background-size: 100% 100%;
+    }
+}
